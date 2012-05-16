@@ -1,5 +1,5 @@
 <?php
-include_once('iDriveSync.php');
+include_once('iDrive.php');
 
 $username = "[your IDriveSync user name]";
 $userpwd = "[your IDriveSync password]";
