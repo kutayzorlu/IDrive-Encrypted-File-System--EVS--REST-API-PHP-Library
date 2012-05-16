@@ -1,5 +1,5 @@
 <?php
-	class iDrive{
+	class iDriveSync{
 
 		private $data = Array();
 
@@ -9,7 +9,7 @@
 			$this->data['pwd'] = $pwd;
 			$this->data['crtpath'] = $crtpath;
 
-			$url = "https://evs.idrive.com/evs";
+			$url = "https://wwww.idrivesync.com/evs";
 
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL, $url.'/getServerAddress');
@@ -73,7 +73,7 @@
 		}
 		public function  getServerAddress(){
 			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_URL, 'https://evs.idrive.com/evs/getServerAddress');
+			curl_setopt($ch, CURLOPT_URL, 'https://www.idrivesync.com/evs/getServerAddress');
 
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_POST, true);
