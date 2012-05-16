@@ -1,11 +1,11 @@
 <?php
-include_once('iDrive.php');
+include_once('iDriveSync.php');
 
-$username = "[your IDrive user name]";
-$userpwd = "[your IDrive password]";
+$username = "[your IDriveSync user name]";
+$userpwd = "[your IDriveSync password]";
 $localcertpath = "[path to a local cert to make ssl call with curl]";
 
-$IDObject = new iDrive($username,$userpwd,$localcertpath);
+$IDObject = new iDriveSync($username,$userpwd,$localcertpath);
 
 echo "getServerAddress<br />";
 $ServerInfo21 = new SimpleXMLElement($IDObject->getServerAddress());
