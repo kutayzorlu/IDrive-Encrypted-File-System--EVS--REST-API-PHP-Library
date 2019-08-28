@@ -5,3 +5,96 @@ This is a PHP Library for working with the IDriveSync Encrypted File System (EVS
 License: Apache 2.0 - http://www.apache.org/licenses/LICENSE-2.0.html
 
 Developer Site - http://www.idrivesync.com/evs
+
+
+https://www.idrive.com/idrive/signupFree
+
+
+Site : REST :  https://www.idrivesync.com/evs/web-developers-guide.htm
+
+
+IDriveSync - Encrypted and versioned file system HomeSign upDownloadFAQSupportIDriveSync
+Home › REST APIs
+REST APIs
+IDriveSync EVS REST APIs: Development now made easy!
+APIs
+Authentication methods 
+Use OAuth or user credentials to authenticate all API requests.
+Get Server address 
+Retrieve your IDriveSync server address 
+Validate Account 
+Validate the user account 
+Configure Account 
+Configure the user account with encryption 
+Validate Private Key 
+Validate your private encryption key
+Upload 
+Upload selected files to your IDriveSync account 
+Download 
+Download any selected version of a particular file 
+Search 
+Fast and efficient search that helps you locate a single item or the entire account in minimum time
+Version history 
+Retrieve complete version details of a particular file 
+Properties
+Retrieve properties (size, date of creation etc.,) of a particular file / folder in your account
+Status
+Verify the existence of a specified file(s) / folder(s) in your account
+Create folder 
+Create new folder(s) in your IDriveSync account
+Rename file / folder 
+Rename file(s) / folder(s) in your IDriveSync account
+Copy and paste 
+Copy file(s) / folder(s) from one location to another within the IDriveSync account
+Trash 
+The trash feature recovers file(s) / folder(s) deleted by accident
+Delete 
+Delete single or multiple files / folders 
+Listing 
+List your account content
+Events 
+Retrieve details of all events in your account
+Display Quota 
+Retrieve the total quota, account usage and number of files
+Folder details 
+Retrieve details of the folder
+Some important notes, parameters and output structure details of REST APIs: 
+
+
+Input Parameters
+uid	username or email address
+pwd	password
+pvtkey	Private encryption key is an optional parameter and is not required if you opt for the default encryption key during your IDriveSync account sign up
+p	resource path
+searchkey	search criteria
+foldername	Name of the folder
+HTTP methodIDriveSync EVS REST APIs require ‘POST’ calls, to ensure secured access.
+SSLIDriveSync EVS REST APIs requests can be done over SSL.
+Output StructureAll output will be in XML format.
+
+The XML tree structure node details:
+
+tree:
+This is the root node for all XML outputs with attributes based on the APIs executed.
+Example:<tree path="/Data/" message="SUCCESS" filecount="3">
+Wherein, path, message and filecount are attributes for the root node “tree”.
+
+item:
+This is the child node followed by attributes and an optional node based on executed APIs.
+Example:<item restype="1" resname="web.xml" size="3631" lmd="2010/05/26 02:03:49" ver="1" />
+Wherein, restype, resname, lmd and ver are attributes for the child node “item”.
+IDriveSync EVS
+Sign up for an account
+My account
+Developer Resources
+Getting started
+Functionality and Features
+Download center
+Need Help?
+Read the FAQs
+Support
+Corporate
+Legal
+Terms of service
+Privacy statement
+© Pro Softnet Corporation. All rights reserved.
